@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #FDF8F4;
+  color: #2E2119;
+}
+
+/* Crochet-inspired scalloped divider — the site's signature element */
+.scallop-divider {
+  height: 20px;
+  width: 100%;
+  background-image: radial-gradient(circle at 10px -2px, transparent 12px, #FDF8F4 13px);
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+}
+
+.scallop-divider-berry {
+  height: 20px;
+  width: 100%;
+  background-image: radial-gradient(circle at 10px -2px, transparent 12px, #B4714F 13px);
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+}
+
+.input {
+  @apply w-full border border-plum/15 rounded-xl2 px-4 py-3 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-berry;
+}
